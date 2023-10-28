@@ -16,7 +16,7 @@ export function HeroSection() {
 						}}
 						animate={{ x: 0, opacity: 1, scale: 1 }}
 						transition={{ type: 'spring', bounce: 0.2 }}
-						className="mx-auto max-w-2xl [--opacity-from:0%] [--scale-from:0%] lg:mx-0 lg:[--x-from:-100vw]"
+						className="mx-auto max-w-2xl [--opacity-from:0%] [--scale-from:0%] lg:mx-0 lg:[--scale-from:1] lg:[--x-from:-100vw]"
 					>
 						<h1 className="text-center font-serif text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl lg:text-left">
 							Dress & feel like the gentleman you are.

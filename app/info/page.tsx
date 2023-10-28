@@ -19,7 +19,7 @@ export default function Info() {
 						<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
 							<div className="rounded-2xl bg-gray-50 p-10">
 								<h3 className="text-base font-semibold leading-7 text-gray-900">
-									Collaborate
+									Email
 								</h3>
 								<dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
 									<div>
@@ -41,7 +41,7 @@ export default function Info() {
 							</div>
 							<div className="rounded-2xl bg-gray-50 p-10">
 								<h3 className="text-base font-semibold leading-7 text-gray-900">
-									Press
+									Instagram
 								</h3>
 								<dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
 									<div>
@@ -63,7 +63,7 @@ export default function Info() {
 							</div>
 							<div className="rounded-2xl bg-gray-50 p-10">
 								<h3 className="text-base font-semibold leading-7 text-gray-900">
-									Join our team
+									Facebook
 								</h3>
 								<dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
 									<div>
@@ -85,7 +85,7 @@ export default function Info() {
 							</div>
 							<div className="rounded-2xl bg-gray-50 p-10">
 								<h3 className="text-base font-semibold leading-7 text-gray-900">
-									Say hello
+									WhatsApp
 								</h3>
 								<dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600">
 									<div>

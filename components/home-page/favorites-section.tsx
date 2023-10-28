@@ -82,12 +82,11 @@ export function OurFavoritesSection({ className }: { className?: string }) {
 					<div className="mt-6 sm:hidden">
 						<a
 							href="/products"
-							className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+							className="block text-sm font-semibold text-yellow-100"
 						>
 							Browse all favorites
 							<span aria-hidden="true"> &rarr;</span>
 						</a>
-						CarouselSlider
 					</div>
 				</div>
 			</div>

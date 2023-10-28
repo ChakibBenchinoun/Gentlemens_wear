@@ -9,10 +9,14 @@ export function HeroSection() {
 			<div className="container mx-auto flex h-screen justify-center px-6 lg:grid lg:grid-cols-12 lg:px-8">
 				<div className="z-40 flex items-center bg-black/50 py-24 sm:py-10 lg:z-10 lg:col-span-7 lg:-mt-20 lg:mr-4 lg:bg-inherit lg:px-0 xl:col-span-6">
 					<AnimatedDiv
-						initial={{ x: '-100vw' }}
-						animate={{ x: 0 }}
+						initial={{
+							x: 'var(--x-from)',
+							opacity: 'var(--opacity-from)',
+							scale: 'var(--scale-from)',
+						}}
+						animate={{ x: 0, opacity: 1, scale: 1 }}
 						transition={{ type: 'spring', bounce: 0.2 }}
-						className="mx-auto max-w-2xl lg:mx-0"
+						className="mx-auto max-w-2xl [--opacity-from:0%] [--scale-from:0%] lg:mx-0 lg:[--x-from:-100vw]"
 					>
 						<h1 className="text-center font-serif text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl lg:text-left">
 							Dress & feel like the gentleman you are.

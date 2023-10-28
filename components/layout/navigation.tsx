@@ -50,12 +50,12 @@ export function Navigation() {
 							sideOffset={22}
 						>
 							{navigation.map((item) => (
-								<DropdownMenuItem key={item.name} className="mx-4 my-2 w-full">
-									<div className="group">
+								<DropdownMenuItem key={item.name} className="mx-4 my-2" asChild>
+									<div className="group flex w-full">
 										<a
 											key={item.name}
 											href={item.href}
-											className="text-md py-2 font-serif font-semibold leading-6 text-gray-900"
+											className="text-md w-full py-2 font-serif font-semibold leading-6 text-gray-900"
 										>
 											{item.name}
 										</a>

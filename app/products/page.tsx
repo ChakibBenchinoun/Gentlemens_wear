@@ -33,7 +33,7 @@ export default function Products() {
 								</p>
 								<div className="mt-10 flex">
 									<a
-										href="#"
+										href="https://www.instagram.com/moulay_menswear/"
 										className="group text-sm font-semibold leading-6 text-gray-900"
 									>
 										Go to Instagram Page

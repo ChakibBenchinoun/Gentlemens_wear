@@ -49,7 +49,7 @@ export default function Team() {
 	const ref = React.useRef(null)
 	const isInView = useInView(ref)
 	return (
-		<div className="relative py-24 sm:py-32">
+		<div className="relative bg-gray-700 py-24 sm:py-32">
 			<div
 				ref={ref}
 				className="container mx-auto grid items-center gap-x-20 gap-y-20 px-6 lg:grid-cols-4 lg:px-8"
@@ -60,10 +60,10 @@ export default function Team() {
 					transition={{ type: 'spring', bounce: 0.2, duration: 1 }}
 					className="max-w-xl lg:col-span-2"
 				>
-					<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-6xl">
+					<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl">
 						Our Team.
 					</h1>
-					<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-900 lg:max-w-none">
+					<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-100 lg:max-w-none">
 						Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
 						cupidatat mollit aute velit. Et labore commodo nulla aliqua proident
 						mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
@@ -86,10 +86,10 @@ export default function Team() {
 									height={500}
 								/>
 								<div>
-									<h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+									<h3 className="text-base font-semibold leading-7 tracking-tight text-white">
 										{person.name}
 									</h3>
-									<p className="text-sm font-semibold leading-6 text-indigo-600">
+									<p className="text-sm font-semibold leading-6 text-yellow-300">
 										{person.role}
 									</p>
 								</div>

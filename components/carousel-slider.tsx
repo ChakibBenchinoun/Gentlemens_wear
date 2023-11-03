@@ -96,7 +96,7 @@ function CarouselSliderImage({ isInView = true }: { isInView?: boolean }) {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1.5 }}
-			className="no-scrollbar flex w-full snap-x snap-mandatory scroll-px-10 gap-x-10 overflow-x-scroll scroll-smooth px-5 py-5"
+			className="no-scrollbar mx-auto flex w-full max-w-sm snap-x snap-mandatory scroll-px-5 gap-x-10 overflow-x-scroll scroll-smooth px-5 py-5 sm:max-w-none lg:scroll-px-10"
 		>
 			{images.map(({ product_image, product_name, price }, index) => {
 				return (

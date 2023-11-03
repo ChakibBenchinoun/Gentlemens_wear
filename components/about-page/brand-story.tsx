@@ -41,6 +41,7 @@ export default function BrandStory() {
 									bounce: 0.2,
 									duration: 1,
 									delay: 0.2,
+									delay: 0.2,
 								}}
 								className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl"
 							>

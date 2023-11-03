@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useInView } from 'framer-motion'
 
 import { cn } from '@/lib/utils'
@@ -37,7 +38,7 @@ export function AboutSection({ className }: { className?: string }) {
 							fugiat. Quasi aperiam sit non sit neque reprehenderit.
 						</p>
 						<div className="mt-10 flex">
-							<a
+							<Link
 								href="/about"
 								className="group text-sm font-semibold leading-6 text-gray-900"
 							>
@@ -46,14 +47,19 @@ export function AboutSection({ className }: { className?: string }) {
 									→
 								</span>
 								<div className="h-0.5 origin-left scale-x-0 bg-yellow-500 transition-all group-hover:scale-x-100" />
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
 						<AnimatedDiv
 							initial={{ x: '100vw' }}
 							animate={{ x: isInView ? 0 : '100vw' }}
-							transition={{ type: 'spring', bounce: 0.2, duration: 1 }}
+							transition={{
+								type: 'spring',
+								bounce: 0.2,
+								duration: 1,
+								delay: 0.2,
+							}}
 							className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end"
 						>
 							<Image

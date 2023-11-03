@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Container from '@/components/layout/container'
 import image3 from '../../assets/3.jpg'
@@ -33,7 +34,7 @@ export default function Products() {
 									our products on our Website soon.
 								</p>
 								<div className="mt-10 flex">
-									<a
+									<Link
 										href="https://www.instagram.com/moulay_menswear/"
 										className="group text-sm font-semibold leading-6 text-gray-900"
 									>
@@ -42,7 +43,7 @@ export default function Products() {
 											→
 										</span>
 										<div className="h-0.5 origin-left scale-x-0 bg-yellow-500 transition-all group-hover:scale-x-100" />
-									</a>
+									</Link>
 								</div>
 							</div>
 							<div className="mr-0 mt-14 flex justify-end gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0">

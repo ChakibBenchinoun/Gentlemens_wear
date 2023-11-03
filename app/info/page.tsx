@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Container from '@/components/layout/container'
 
@@ -27,12 +28,12 @@ export default function Info() {
 									<div>
 										<dt className="sr-only">Email</dt>
 										<dd>
-											<a
+											<Link
 												className="font-semibold text-indigo-600"
 												href="mailto:collaborate@example.com"
 											>
 												collaborate@example.com
-											</a>
+											</Link>
 										</dd>
 									</div>
 									<div className="mt-1">
@@ -49,12 +50,12 @@ export default function Info() {
 									<div>
 										<dt className="sr-only">Email</dt>
 										<dd>
-											<a
+											<Link
 												className="font-semibold text-indigo-600"
 												href="mailto:press@example.com"
 											>
 												press@example.com
-											</a>
+											</Link>
 										</dd>
 									</div>
 									<div className="mt-1">
@@ -71,12 +72,12 @@ export default function Info() {
 									<div>
 										<dt className="sr-only">Email</dt>
 										<dd>
-											<a
+											<Link
 												className="font-semibold text-indigo-600"
 												href="mailto:careers@example.com"
 											>
 												careers@example.com
-											</a>
+											</Link>
 										</dd>
 									</div>
 									<div className="mt-1">
@@ -93,12 +94,12 @@ export default function Info() {
 									<div>
 										<dt className="sr-only">Email</dt>
 										<dd>
-											<a
+											<Link
 												className="font-semibold text-indigo-600"
 												href="mailto:hello@example.com"
 											>
 												hello@example.com
-											</a>
+											</Link>
 										</dd>
 									</div>
 									<div className="mt-1">

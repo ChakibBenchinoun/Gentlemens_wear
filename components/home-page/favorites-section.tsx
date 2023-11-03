@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { CarouselSlider } from '../carousel-slider'
 import Container from '../layout/container'
 import product1 from '/assets/products/product1.jpg'
@@ -68,26 +70,26 @@ export function OurFavoritesSection({ className }: { className?: string }) {
 						>
 							Our Favorites
 						</h2>
-						<a
+						<Link
 							href="/products"
 							className="group hidden text-sm font-semibold text-yellow-100 sm:block"
 						>
 							Browse all favorites
 							<span aria-hidden="true"> &rarr;</span>
 							<div className="h-0.5 origin-left scale-x-0 bg-yellow-500 transition-all group-hover:scale-x-100" />
-						</a>
+						</Link>
 					</div>
 					<div className="my-5">
 						<CarouselSlider images={favorites} />
 					</div>
 					<div className="mt-6 sm:hidden">
-						<a
+						<Link
 							href="/products"
 							className="block text-sm font-semibold text-yellow-100"
 						>
 							Browse all favorites
 							<span aria-hidden="true"> &rarr;</span>
-						</a>
+						</Link>
 					</div>
 				</Container>
 			</div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import heroSectionImage from '../../assets/hero-image.jpg'
 import { AnimatedDiv } from '../animated-div'
@@ -28,13 +29,13 @@ export function HeroSection() {
 							fugiat aliqua.
 						</p>
 						<div className="mx-auto mt-10 flex w-fit items-center gap-x-6 lg:ml-0">
-							<a
+							<Link
 								href="#services"
 								className="rounded bg-yellow-600 px-3.5 py-2.5 text-sm font-semibold text-gray-100 hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
 							>
 								Our Services
-							</a>
-							<a
+							</Link>
+							<Link
 								href="/products"
 								className="group text-sm font-semibold leading-6 text-gray-100"
 							>
@@ -46,7 +47,7 @@ export function HeroSection() {
 									→
 								</span>
 								<div className="h-0.5 origin-left scale-x-0 bg-yellow-500 transition-all group-hover:scale-x-100" />
-							</a>
+							</Link>
 						</div>
 					</AnimatedDiv>
 				</div>

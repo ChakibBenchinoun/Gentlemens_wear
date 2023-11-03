@@ -1,10 +1,12 @@
 import Image from 'next/image'
 
+import Container from '@/components/layout/container'
+
 export default function Info() {
 	return (
 		<div className="relative py-24 sm:py-32">
 			<Theme />
-			<div className="container mx-auto px-6 lg:px-8">
+			<Container>
 				<div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
 					<div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
 						<div>
@@ -128,7 +130,7 @@ export default function Info() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 		</div>
 	)
 }

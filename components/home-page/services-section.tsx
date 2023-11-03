@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import image6 from '../../assets/6.jpg'
 import image7 from '../../assets/7.jpg'
 import { AnimatedDiv } from '../animated-div'
+import Container from '../layout/container'
 
 const posts = [
 	{
@@ -27,7 +28,7 @@ const posts = [
 export function ServicesSection({ className }: { className?: string }) {
 	return (
 		<div className={cn(className, 'scroll-mt-48')} id="services">
-			<div className="container mx-auto px-6 lg:px-8">
+			<Container>
 				<div className="mx-auto max-w-2xl text-center">
 					<h2 className="font-serif text-3xl font-bold tracking-tight text-yellow-200 sm:text-4xl">
 						Our Sevices
@@ -60,7 +61,7 @@ export function ServicesSection({ className }: { className?: string }) {
 						</AnimatedDiv>
 					))}
 				</div>
-			</div>
+			</Container>
 		</div>
 	)
 }

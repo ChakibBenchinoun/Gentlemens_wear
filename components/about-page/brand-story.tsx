@@ -10,12 +10,13 @@ import image5 from '../../assets/5.jpg'
 import image6 from '../../assets/6.jpg'
 import image7 from '../../assets/7.jpg'
 import { AnimatedDiv } from '../animated-div'
+import Container from '../layout/container'
 
 export default function BrandStory() {
 	const ref = React.useRef(null)
 	const isInView = useInView(ref)
 	return (
-		<div className="relative isolate -z-10 pb-24 pt-10 sm:pb-32">
+		<div className="relative isolate -z-10 pb-8 pt-16 sm:pb-10 sm:pt-24">
 			<div
 				className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
 				aria-hidden="true"
@@ -29,28 +30,33 @@ export default function BrandStory() {
 				/>
 			</div>
 			<div className="overflow-hidden">
-				<div className="container mx-auto px-6 lg:px-8">
-					<div
-						ref={ref}
-						className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
-					>
-						<AnimatedDiv
-							initial={{ x: '-100vw' }}
-							animate={{ x: isInView ? 0 : '-100vw' }}
-							transition={{ type: 'spring', bounce: 0.2, duration: 1 }}
-							className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl"
-						>
-							<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-6xl">
-								We’re changing the way people Dress.
-							</h1>
-							<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-900 sm:max-w-md lg:max-w-none">
-								Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
-								cupidatat mollit aute velit. Et labore commodo nulla aliqua
-								proident mollit ullamco exercitation tempor. Sint aliqua anim
-								nulla sunt mollit id pariatur in voluptate cillum. Eu voluptate
-								tempor esse minim amet fugiat veniam occaecat aliqua.
-							</p>
-						</AnimatedDiv>
+				<Container>
+					<div className="gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+						<div ref={ref}>
+							<AnimatedDiv
+								initial={{ x: '-100vw' }}
+								animate={{ x: isInView ? 0 : '-100vw' }}
+								transition={{
+									type: 'spring',
+									bounce: 0.2,
+									duration: 1,
+									delay: 0.2,
+								}}
+								className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl"
+							>
+								<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-6xl">
+									We’re changing the way people Dress.
+								</h1>
+								<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-900 sm:max-w-md lg:max-w-none">
+									Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
+									quis cupidatat mollit aute velit. Et labore commodo nulla
+									aliqua proident mollit ullamco exercitation tempor. Sint
+									aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
+									Eu voluptate tempor esse minim amet fugiat veniam occaecat
+									aliqua.
+								</p>
+							</AnimatedDiv>
+						</div>
 						<div className="mr-0 mt-14 flex justify-end gap-8 sm:-mt-44 sm:pl-20 lg:mt-0 lg:pl-0">
 							<div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
 								<div className="relative">
@@ -110,7 +116,7 @@ export default function BrandStory() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</Container>
 			</div>
 		</div>
 	)

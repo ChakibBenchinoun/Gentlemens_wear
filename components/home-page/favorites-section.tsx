@@ -1,4 +1,5 @@
 import { CarouselSlider } from '../carousel-slider'
+import Container from '../layout/container'
 import product1 from '/assets/products/product1.jpg'
 import product2 from '/assets/products/product2.jpg'
 import product3 from '/assets/products/product3.jpg'
@@ -59,7 +60,7 @@ export function OurFavoritesSection({ className }: { className?: string }) {
 	return (
 		<section aria-labelledby="favorites-heading">
 			<div className={className}>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8">
+				<Container>
 					<div className="sm:flex sm:items-baseline sm:justify-between">
 						<h2
 							id="favorites-heading"
@@ -88,7 +89,7 @@ export function OurFavoritesSection({ className }: { className?: string }) {
 							<span aria-hidden="true"> &rarr;</span>
 						</a>
 					</div>
-				</div>
+				</Container>
 			</div>
 		</section>
 	)

@@ -10,6 +10,7 @@ import image3 from '../../assets/3.jpg'
 import image4 from '../../assets/4.jpg'
 import image5 from '../../assets/5.jpg'
 import { AnimatedDiv } from '../animated-div'
+import Container from '../layout/container'
 
 export function AboutSection({ className }: { className?: string }) {
 	const ref = React.useRef(null)
@@ -19,7 +20,7 @@ export function AboutSection({ className }: { className?: string }) {
 			ref={ref}
 			className={cn('relative overflow-hidden bg-white', className)}
 		>
-			<div className="container mx-auto px-6 lg:flex lg:px-8">
+			<Container className="lg:flex">
 				<div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
 					<div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
 						<h2 className="font-serif text-3xl font-bold text-yellow-700 sm:text-4xl">
@@ -124,7 +125,7 @@ export function AboutSection({ className }: { className?: string }) {
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 		</div>
 	)
 }

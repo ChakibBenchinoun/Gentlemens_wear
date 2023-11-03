@@ -2,6 +2,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import { cn } from '@/lib/utils'
+import Container from '../layout/container'
 
 const testimonials = [
 	[
@@ -117,7 +118,7 @@ export function TestimonialsSection({ className }: { className?: string }) {
 					}}
 				/>
 			</div>
-			<div className="container mx-auto px-6 lg:px-8">
+			<Container>
 				<div className="mx-auto max-w-xl text-center">
 					<h2 className="text-lg font-semibold leading-8 tracking-tight text-yellow-600">
 						Testimonials
@@ -174,7 +175,7 @@ export function TestimonialsSection({ className }: { className?: string }) {
 						</div>
 					))}
 				</div>
-			</div>
+			</Container>
 		</div>
 	)
 }

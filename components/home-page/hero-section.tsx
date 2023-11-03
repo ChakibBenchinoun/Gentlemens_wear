@@ -2,11 +2,12 @@ import Image from 'next/image'
 
 import heroSectionImage from '../../assets/hero-image.jpg'
 import { AnimatedDiv } from '../animated-div'
+import Container from '../layout/container'
 
 export function HeroSection() {
 	return (
 		<div className="relative bg-gray-700">
-			<div className="container mx-auto flex h-screen justify-center px-6 lg:grid lg:grid-cols-12 lg:px-8">
+			<Container className="flex h-screen justify-center lg:grid lg:grid-cols-12">
 				<div className="z-40 flex items-center bg-black/50 py-24 sm:py-10 lg:z-10 lg:col-span-7 lg:-mt-20 lg:mr-4 lg:bg-inherit lg:px-0 xl:col-span-6">
 					<AnimatedDiv
 						initial={{
@@ -58,7 +59,7 @@ export function HeroSection() {
 						height={500}
 					/>
 				</div>
-			</div>
+			</Container>
 		</div>
 	)
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import Container from '@/components/layout/container'
 import image3 from '../../assets/3.jpg'
 import image4 from '../../assets/4.jpg'
 import image5 from '../../assets/5.jpg'
@@ -24,7 +25,7 @@ export default function Products() {
 					/>
 				</div>
 				<div className="flex-1 overflow-hidden">
-					<div className="container mx-auto px-6 lg:px-8">
+					<Container>
 						<div className=" gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
 							<div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
 								<p className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-2xl">
@@ -103,7 +104,7 @@ export default function Products() {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Container>
 				</div>
 			</div>
 		</>

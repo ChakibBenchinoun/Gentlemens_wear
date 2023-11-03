@@ -20,8 +20,8 @@ export function HeroSection() {
 						transition={{ type: 'spring', bounce: 0.2 }}
 						className="mx-auto max-w-2xl [--opacity-from:0%] [--scale-from:0%] lg:mx-0 lg:[--scale-from:1] lg:[--x-from:-100vw]"
 					>
-						<h1 className="text-center font-serif text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl lg:text-left">
-							Dress & feel like the gentleman you are.
+						<h1 className="text-center font-primery text-4xl tracking-tight text-yellow-200 sm:text-6xl lg:text-left">
+							Dress & feel Like the gentleman you are.
 						</h1>
 						<p className="mt-6 text-center text-lg leading-8 text-yellow-100 lg:text-left">
 							Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

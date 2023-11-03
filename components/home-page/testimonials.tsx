@@ -123,7 +123,7 @@ export function TestimonialsSection({ className }: { className?: string }) {
 					<h2 className="text-lg font-semibold leading-8 tracking-tight text-yellow-600">
 						Testimonials
 					</h2>
-					<p className="mt-2 font-serif text-3xl font-bold tracking-tight text-yellow-700 sm:text-4xl">
+					<p className="mt-2 font-primery text-3xl tracking-tight text-yellow-700 sm:text-4xl">
 						We have worked with thousands of amazing people
 					</p>
 				</div>
@@ -162,9 +162,9 @@ export function TestimonialsSection({ className }: { className?: string }) {
 													width={500}
 												/>
 												<div>
-													<div className="font-semibold">
+													<h1 className="font-primery font-semibold">
 														{testimonial.author.name}
-													</div>
+													</h1>
 													<div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
 												</div>
 											</figcaption>

@@ -44,10 +44,10 @@ export default function BrandStory() {
 								}}
 								className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl"
 							>
-								<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-6xl">
+								<h1 className="font-primery text-4xl tracking-tight text-yellow-700 sm:text-6xl">
 									We’re changing the way people Dress.
 								</h1>
-								<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-900 sm:max-w-md lg:max-w-none">
+								<p className="relative mt-6  text-lg leading-8 text-yellow-900 sm:max-w-md lg:max-w-none">
 									Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
 									quis cupidatat mollit aute velit. Et labore commodo nulla
 									aliqua proident mollit ullamco exercitation tempor. Sint

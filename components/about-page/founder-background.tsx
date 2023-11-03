@@ -31,10 +31,10 @@ export default function FoundersBackground() {
 						}}
 						className="order-1 w-full [--x-to:-100vw] lg:max-w-xl lg:shrink-0 xl:order-2 xl:col-span-2 xl:max-w-2xl xl:[--x-to:100vw]"
 					>
-						<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-700 sm:text-6xl">
+						<h1 className="font-primery text-4xl tracking-tight text-yellow-700 sm:text-6xl">
 							Founder&apos;s Background.
 						</h1>
-						<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-900 lg:max-w-none">
+						<p className="relative mt-6  text-lg leading-8 text-yellow-900 lg:max-w-none">
 							Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
 							cupidatat mollit aute velit. Et labore commodo nulla aliqua
 							proident mollit ullamco exercitation tempor. Sint aliqua anim

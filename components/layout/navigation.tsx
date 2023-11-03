@@ -23,8 +23,6 @@ const navigation = [
 ]
 export function Navigation() {
 	const [menuOpen, setMenuOpen] = React.useState(false)
-	console.log(menuOpen)
-
 	return (
 		<header className="fixed inset-x-0 top-0 z-50 border-b border-gray-300 bg-white">
 			<Container className="py-4">
@@ -41,7 +39,7 @@ export function Navigation() {
 							width={500}
 							height={500}
 						/>
-						<span className="ml-5 font-serif text-xl uppercase tracking-wider">
+						<span className="ml-5 font-primery text-xl font-bold uppercase tracking-wide">
 							Moulay Menswear
 						</span>
 					</Link>
@@ -55,7 +53,7 @@ export function Navigation() {
 								<button
 									onClick={() => setMenuOpen(!menuOpen)}
 									type="button"
-									className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 font-serif text-gray-700 outline-none ring-inset"
+									className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 font-primery  text-gray-700 outline-none ring-inset"
 								>
 									Menu
 								</button>
@@ -79,7 +77,12 @@ export function Navigation() {
 					</div>
 					<div className="hidden lg:flex lg:gap-x-12">
 						{navigation.map((item) => (
-							<NavLink href={item.href} key={item.name} label={item.name} />
+							<NavLink
+								href={item.href}
+								key={item.name}
+								label={item.name}
+								className="font-primery font-bold tracking-wider"
+							/>
 						))}
 					</div>
 				</nav>
@@ -104,7 +107,7 @@ export function NavLink({
 			key={label}
 			href={href}
 			className={cn(
-				'group font-serif text-sm font-semibold leading-6 text-gray-900',
+				'group  text-sm font-semibold leading-6 text-gray-900',
 				className,
 			)}
 		>
@@ -134,7 +137,7 @@ export function MobileNavLink({
 			key={label}
 			href={href}
 			className={cn(
-				'w-full rounded-lg px-4 py-2 font-serif text-sm font-semibold leading-6 text-gray-900 outline-none ring-inset',
+				'w-full rounded-lg px-4 py-2  text-sm font-semibold leading-6 text-gray-900 outline-none ring-inset',
 				isActive ? 'bg-yellow-300' : 'hover:bg-yellow-300',
 				className,
 			)}

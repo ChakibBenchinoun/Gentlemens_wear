@@ -16,6 +16,10 @@ module.exports = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				primery: ['var(--font-dm-serif-display)'],
+				body: ['var(--font-quattrocento)'],
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: 0 },

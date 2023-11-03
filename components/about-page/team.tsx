@@ -67,10 +67,10 @@ export default function Team() {
 						}}
 						className="max-w-xl lg:col-span-2"
 					>
-						<h1 className="font-serif text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl">
+						<h1 className=" text-4xl font-bold tracking-tight text-yellow-200 sm:text-6xl">
 							Our Team.
 						</h1>
-						<p className="relative mt-6 font-serif text-lg leading-8 text-yellow-100 lg:max-w-none">
+						<p className="relative mt-6  text-lg leading-8 text-yellow-100 lg:max-w-none">
 							Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
 							cupidatat mollit aute velit. Et labore commodo nulla aliqua
 							proident mollit ullamco exercitation tempor. Sint aliqua anim
@@ -93,7 +93,7 @@ export default function Team() {
 										height={500}
 									/>
 									<div>
-										<h3 className="text-base font-semibold leading-7 tracking-tight text-white">
+										<h3 className="font-primery text-base leading-7 tracking-tight text-white">
 											{person.name}
 										</h3>
 										<p className="text-sm font-semibold leading-6 text-yellow-300">

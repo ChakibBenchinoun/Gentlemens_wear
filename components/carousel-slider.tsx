@@ -123,7 +123,7 @@ function CarouselSliderImage({ isInView = true }: { isInView?: boolean }) {
 						</div>
 						<div className="ml-7 py-6">
 							<h1>
-								<span className="line-clamp-1 font-serif font-semibold text-yellow-300">
+								<span className="line-clamp-1 font-primery text-yellow-300">
 									{product_name}
 								</span>
 							</h1>

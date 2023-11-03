@@ -1,13 +1,22 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { DM_Serif_Display, Quattrocento } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 import { Footer } from '@/components/layout/footer'
 import { Navigation } from '@/components/layout/navigation'
 
-const inter = Inter({ subsets: ['latin'] })
+const dmSerif = DM_Serif_Display({
+	subsets: ['latin', 'latin-ext'],
+	weight: ['400'],
+	variable: '--font-dm-serif-display',
+})
+const quattrocento = Quattrocento({
+	subsets: ['latin', 'latin-ext'],
+	weight: ['400', '700'],
+	variable: '--font-quattrocento',
+})
 
 export const metadata: Metadata = {
 	title: 'Moulay Menswear',
@@ -21,7 +30,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className="h-full scroll-smooth">
-			<body className={cn(inter.className, 'flex h-full flex-col')}>
+			<body
+				className={cn(
+					dmSerif.variable,
+					quattrocento.variable,
+					'flex h-full flex-col font-body',
+				)}
+			>
 				<Navigation />
 				<main className="mt-20 flex-1">{children}</main>
 				<Footer />

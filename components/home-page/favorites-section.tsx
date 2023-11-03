@@ -66,7 +66,7 @@ export function OurFavoritesSection({ className }: { className?: string }) {
 					<div className="sm:flex sm:items-baseline sm:justify-between">
 						<h2
 							id="favorites-heading"
-							className="font-serif text-2xl font-bold tracking-tight text-yellow-200"
+							className="font-primery text-2xl tracking-tight text-yellow-200"
 						>
 							Our Favorites
 						</h2>

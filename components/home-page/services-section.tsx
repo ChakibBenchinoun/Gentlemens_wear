@@ -30,7 +30,7 @@ export function ServicesSection({ className }: { className?: string }) {
 		<div className={cn(className, 'scroll-mt-48')} id="services">
 			<Container>
 				<div className="mx-auto max-w-2xl text-center">
-					<h2 className="font-serif text-3xl font-bold tracking-tight text-yellow-200 sm:text-4xl">
+					<h2 className="font-primery text-3xl tracking-tight text-yellow-200 sm:text-4xl">
 						Our Sevices
 					</h2>
 					<p className="mt-2 text-lg leading-8 text-yellow-100">
@@ -46,7 +46,7 @@ export function ServicesSection({ className }: { className?: string }) {
 							key={post.id}
 							className="duration-600 relative isolate flex flex-col items-center justify-center overflow-hidden rounded-xl border border-yellow-200 bg-gray-900 px-8 pb-8 pt-80 transition-all hover:scale-105 sm:pt-48 lg:pt-80"
 						>
-							<h3 className="mt-3 text-center font-serif text-lg font-semibold leading-6 text-white">
+							<h3 className="mt-3 text-center font-primery text-lg font-semibold leading-6 text-white">
 								{post.title}
 							</h3>
 							<Image

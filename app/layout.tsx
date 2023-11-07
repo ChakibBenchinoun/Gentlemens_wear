@@ -19,7 +19,7 @@ const quattrocento = Quattrocento({
 })
 
 export const metadata: Metadata = {
-	title: 'Moulay Menswear',
+	title: "GentleMen's wear",
 	description: 'Company Description',
 }
 

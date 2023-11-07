@@ -31,7 +31,7 @@ export function Navigation() {
 						href="/"
 						className="-m-1.5 flex items-center justify-center p-1.5"
 					>
-						<span className="sr-only">Moulay Menswear</span>
+						<span className="sr-only">GentleMenswear</span>
 						<Image
 							className="h-14 w-auto rounded-full"
 							src={logo}
@@ -40,7 +40,7 @@ export function Navigation() {
 							height={500}
 						/>
 						<span className="ml-5 font-primery text-xl font-bold uppercase tracking-wide">
-							Moulay Menswear
+							GentleMen&apos;s wear
 						</span>
 					</Link>
 
